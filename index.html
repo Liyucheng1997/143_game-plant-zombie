@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>花园防线 Three.js</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game"></canvas>
+
+      <header class="topbar">
+        <div class="meter sun-meter">
+          <span class="sun-icon"></span>
+          <strong id="sun-count">150</strong>
+        </div>
+        <div class="meter wave-meter">
+          <span>波次</span>
+          <strong id="wave-count">1</strong>
+        </div>
+        <button id="pause-button" class="icon-button" type="button" aria-label="暂停" title="暂停">
+          <span id="pause-icon">II</span>
+        </button>
+        <button id="restart-button" class="icon-button" type="button" aria-label="重开" title="重开">
+          <span>↻</span>
+        </button>
+      </header>
+
+      <aside class="seed-tray" aria-label="植物卡牌">
+        <button class="seed-card selected" type="button" data-plant="shooter">
+          <img src="/assets/sprites/pea-shooter.png" alt="" />
+          <span>豌豆射手</span>
+          <b>100</b>
+        </button>
+        <button class="seed-card" type="button" data-plant="sunflower">
+          <img src="/assets/sprites/sunflower.png" alt="" />
+          <span>向日花</span>
+          <b>50</b>
+        </button>
+        <button class="seed-card" type="button" data-plant="wallnut">
+          <img src="/assets/sprites/wallnut.png" alt="" />
+          <span>坚果墙</span>
+          <b>50</b>
+        </button>
+      </aside>
+
+      <section id="message" class="message hidden" aria-live="polite">
+        <h1 id="message-title">花园安全</h1>
+        <p id="message-copy"></p>
+        <button id="message-restart" type="button">再来一局</button>
+      </section>
+
+      <div class="hint">按住植物卡牌拖到草坪格子释放种植。点击掉落阳光，阳光会飞入能量栏。</div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
