@@ -36,11 +36,11 @@ const ui = {
 };
 
 const texturePaths = {
-  board: "/assets/lawn-board.png",
-  shooter: "/assets/sprites/pea-shooter.png",
-  sunflower: "/assets/sprites/sunflower.png",
-  wallnut: "/assets/sprites/wallnut.png",
-  zombie: "/assets/sprites/zombie.png",
+  board: "assets/lawn-board.png",
+  shooter: "assets/sprites/pea-shooter.png",
+  sunflower: "assets/sprites/sunflower.png",
+  wallnut: "assets/sprites/wallnut.png",
+  zombie: "assets/sprites/zombie.png",
 };
 
 const plantTypes = {
